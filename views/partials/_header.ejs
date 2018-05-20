@@ -1,0 +1,18 @@
+<title> Tiny App </title>
+
+<% if(username !== undefined){ %>
+    <p><%=username.email%><p>
+      <form  action= "/logout" method = "POST">
+       <input  type= "submit" value ="logout"></input>
+      </form>
+<% } %>
+
+<% if (username === undefined) { %>
+  <a href = "/login"> login </a> | <a href = "/register"> register </a>
+<% } %>
+
+<% if (username !== undefined) { %>
+  <a href ="/urls/new"> Register NewUrl </a>
+<% } %>
+
+
